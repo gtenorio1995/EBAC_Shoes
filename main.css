@@ -60,6 +60,10 @@ nav li a{
     text-transform: uppercase;
 }
 
+nav li a:hover{
+    font-weight: bold;
+}
+
 .menu-burguer{
     width: 2rem;
 }
@@ -127,6 +131,11 @@ nav li a{
     color: #fff;
     font-weight: bold;
     margin: 0 1rem;
+    cursor: pointer;
+}
+
+.conteiner-produtos article button:hover{
+    background-color: #36701b;
 }
 
 footer{
