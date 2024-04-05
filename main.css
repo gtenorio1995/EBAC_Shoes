@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body, html{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header{
+    background-color: #5343d9;
+    width: 100%;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.conteiner{
+    min-width: 320px;
+    max-width: 1024px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+header > .conteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 2rem;
+}
+
+header h1{
+    color: #fff;
+}
+
+nav{
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #5343d9;
+    padding: 0 1.5rem;
+    border-radius: 0 0 0 0.5rem;
+}
+
+nav li{
+    list-style: none;
+    margin: 1rem 0;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.menu-burguer{
+    width: 2rem;
+}
+
+.menu-burguer span{
+    width: 100%;
+    height: 0.125rem;
+    display: block;
+    margin-bottom: 0.25rem;
+    background-color: #fff;
+}
+
+.conteiner-sobre{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner-sobre picture{
+    margin-bottom: 0.5rem;
+}
+
+.controle{
+    padding: 1rem 0;
+}
+
+.controle h2{
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+}
+
+
+.conteiner-produtos{
+    padding: 1rem 0;
+}
+
+.conteiner-produtos article{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.conteiner-produtos article img{
+    margin-bottom: 1rem;
+}
+
+.conteiner-produtos article h3{
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+}
+
+.conteiner-produtos article p{
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+.conteiner-produtos article button{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #55a630;
+    color: #fff;
+    font-weight: bold;
+    margin: 0 1rem;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #5343d9;
+    color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    nav{
+        display: block;
+        position: static;
+    }
+    
+    nav li{
+        list-style: none;
+        margin: 1rem 0;
+        display: inline;
+        margin-left: 1.5rem;
+    }
+    
+    .menu-burguer{
+        display: none;
+    }
+
+    .conteiner{
+        padding: 0 1rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .conteiner-produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 1%;
+        row-gap: 3%;
+    }
+
+    .conteiner-produtos article button{
+        margin: 0;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .conteiner-sobre{
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .conteiner-sobre > .controle{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .conteiner-produtos{
+        grid-template-columns: repeat(4, 23.75%);
+        justify-content: center;
+    }
+}
